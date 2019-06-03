@@ -1,5 +1,7 @@
 DROP DATABASE bookmark_manager;
 CREATE DATABASE bookmark_manager ENCODING 'UTF8';
+CREATE ROLE bookmark NOINHERIT LOGIN PASSWORD password SUPERUSER;
+-- ALTER ROLE bookmark CREATEROLE CREATEDB REPLICATION SUPERUSER;
 CREATE TABLE bookmarks (
    id serial primary key,
    url varchar(60)
