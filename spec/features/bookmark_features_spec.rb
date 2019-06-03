@@ -8,4 +8,9 @@ feature 'Homepage' do
     expect(page).to have_content 'Hello World'  
   end
 
+  scenario 'test for viewing bookmarks' do
+    visit '/bookmarks'
+    expect(page).to have_content 'A bookmark'
+  end
+
 end

@@ -7,6 +7,10 @@ class BookmarkManager < Sinatra::Base
     'Hello World'
   end
 
+  get '/bookmarks' do
+    'A bookmark'
+  end
+
   run! if app_file == $0
 
 end
