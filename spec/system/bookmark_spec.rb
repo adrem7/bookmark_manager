@@ -2,8 +2,8 @@
 
 describe Bookmark do
   it '#all displays array of bookmarks' do
-    expect(subject.all).to include('https://www.infowars.com')
-    expect(subject.all).to include('https://www.facebook.com')
-    expect(subject.all).to include('https://www.google.com')
+    expect(Bookmark.all).to include('https://www.infowars.com')
+    expect(Bookmark.all).to include('https://www.facebook.com')
+    expect(Bookmark.all).to include('https://www.google.com')
   end
 end
