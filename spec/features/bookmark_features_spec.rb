@@ -4,6 +4,7 @@
 # require 'spec_helper'
 # require './app'
 feature 'Homepage' do
+  before(:each) {trauncate_test_db}
   scenario 'view home page' do
     visit '/'
     expect(page).to have_content 'Hello World'
