@@ -1,0 +1,20 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/anthonyhull/workspaces/bookmark_manager/spec/features/bookmark_features_spec.rb": [
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1559566991
+  }
+}
