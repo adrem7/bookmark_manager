@@ -1,16 +1,18 @@
+# frozen_string_literal: true
+
 # require 'capybara/rspec'
 # require 'spec_helper'
 # require './app'
 feature 'Homepage' do
-  
   scenario 'view home page' do
     visit '/'
-    expect(page).to have_content 'Hello World'  
+    expect(page).to have_content 'Hello World'
   end
 
-  scenario 'test for viewing bookmarks' do
+  scenario 'bookmarks page shows URLs' do
     visit '/bookmarks'
-    expect(page).to have_content 'A bookmark'
+    expect(page).to have_content('https://www.infowars.com')
+    expect(page).to have_content('https://www.facebook.com')
+    expect(page).to have_content('https://www.google.com')
   end
-
 end

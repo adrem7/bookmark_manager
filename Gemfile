@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
 ruby '2.6.0'
@@ -13,6 +15,6 @@ group :test do
   gem 'simplecov-console', require: false
 end
 group :dev do
-  gem 'solargraph'
   gem 'pry-byebug'
+  gem 'solargraph'
 end
